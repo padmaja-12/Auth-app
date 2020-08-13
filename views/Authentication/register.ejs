@@ -1,0 +1,27 @@
+<%- include('../partials/header'); %>
+  
+
+<div class="container">
+    <h1>Fill the form below to create an account</h1>
+    <form action="/register" method="POST">
+        <div>
+            <label for="Email">Email</label><br>
+            <input name="email" placeholder="Enter Your email">
+        </div>
+        <div>
+            <label for="Username">Username</label><br>
+            <input name="username" placeholder="Create a username of your choice">
+        </div>
+        <div>
+            <label for="Password1">Password</label><br>
+            <input name="password" placeholder="Create a password">
+        </div>
+        <div>
+            <label for="Password2">Confirm Password</label><br>
+            <input name="confirm password" placeholder="Re-enter the password">
+        </div>
+        <input type="submit" class="btn btn-lg btn-success">
+    </form>
+</div>
+
+<%- include('../partials/footer'); %>
